@@ -9,9 +9,26 @@
 /* Begin PBXBuildFile section */
 		259CB2262CC02F0D00C9F285 /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 259CB2252CC02F0D00C9F285 /* Appwrite */; };
 		259CB2292CC02F2500C9F285 /* EnvironmentOverrides in Frameworks */ = {isa = PBXBuildFile; productRef = 259CB2282CC02F2500C9F285 /* EnvironmentOverrides */; };
-		25A399562CBF30C500D6BCE8 /* OrbitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399552CBF30C500D6BCE8 /* OrbitApp.swift */; };
-		25A399582CBF30C500D6BCE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399572CBF30C500D6BCE8 /* ContentView.swift */; };
-		25A3995A2CBF30C500D6BCE8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399592CBF30C500D6BCE8 /* Item.swift */; };
+		259CB27E2CC0460400C9F285 /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2792CC0460400C9F285 /* LocationManagerDelegate.swift */; };
+		259CB27F2CC0460400C9F285 /* AccountManagementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB27A2CC0460400C9F285 /* AccountManagementService.swift */; };
+		259CB2812CC0460400C9F285 /* UserManagementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB27C2CC0460400C9F285 /* UserManagementService.swift */; };
+		259CB2822CC0460400C9F285 /* AppwriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB27D2CC0460400C9F285 /* AppwriteService.swift */; };
+		259CB2942CC0465600C9F285 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2852CC0465600C9F285 /* UserViewModel.swift */; };
+		259CB2952CC0465600C9F285 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2862CC0465600C9F285 /* AuthViewModel.swift */; };
+		259CB2962CC0465600C9F285 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2882CC0465600C9F285 /* MainTabView.swift */; };
+		259CB2972CC0465600C9F285 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2892CC0465600C9F285 /* LoginView.swift */; };
+		259CB2982CC0465600C9F285 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB28A2CC0465600C9F285 /* HomeView.swift */; };
+		259CB2992CC0465600C9F285 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB28B2CC0465600C9F285 /* SignupView.swift */; };
+		259CB29A2CC0465600C9F285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB28C2CC0465600C9F285 /* ContentView.swift */; };
+		259CB29B2CC0465600C9F285 /* AppwriteLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB28E2CC0465600C9F285 /* AppwriteLogo.swift */; };
+		259CB29C2CC0465600C9F285 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB28F2CC0465600C9F285 /* SearchBar.swift */; };
+		259CB29D2CC0465600C9F285 /* InterestsHorizontalTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2902CC0465600C9F285 /* InterestsHorizontalTags.swift */; };
+		259CB29F2CC0465600C9F285 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2922CC0465600C9F285 /* ActivityIndicatorView.swift */; };
+		259CB2A02CC0465600C9F285 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2932CC0465600C9F285 /* ErrorView.swift */; };
+		259CB2A32CC046F300C9F285 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2A22CC046F300C9F285 /* UserModels.swift */; };
+		259CB2A72CC047D000C9F285 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2A52CC047D000C9F285 /* Extensions.swift */; };
+		259CB2A82CC047D000C9F285 /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2A62CC047D000C9F285 /* LazyList.swift */; };
+		259CB2AA2CC0486D00C9F285 /* OrbitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CB2A92CC0486D00C9F285 /* OrbitApp.swift */; };
 		25A3995C2CBF30C700D6BCE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A3995B2CBF30C700D6BCE8 /* Assets.xcassets */; };
 		25A3995F2CBF30C700D6BCE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A3995E2CBF30C700D6BCE8 /* Preview Assets.xcassets */; };
 		25A399692CBF30C700D6BCE8 /* OrbitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399682CBF30C700D6BCE8 /* OrbitTests.swift */; };
@@ -37,10 +54,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259CB2792CC0460400C9F285 /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
+		259CB27A2CC0460400C9F285 /* AccountManagementService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManagementService.swift; sourceTree = "<group>"; };
+		259CB27C2CC0460400C9F285 /* UserManagementService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManagementService.swift; sourceTree = "<group>"; };
+		259CB27D2CC0460400C9F285 /* AppwriteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppwriteService.swift; sourceTree = "<group>"; };
+		259CB2852CC0465600C9F285 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		259CB2862CC0465600C9F285 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		259CB2882CC0465600C9F285 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		259CB2892CC0465600C9F285 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		259CB28A2CC0465600C9F285 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		259CB28B2CC0465600C9F285 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		259CB28C2CC0465600C9F285 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		259CB28E2CC0465600C9F285 /* AppwriteLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppwriteLogo.swift; sourceTree = "<group>"; };
+		259CB28F2CC0465600C9F285 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		259CB2902CC0465600C9F285 /* InterestsHorizontalTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsHorizontalTags.swift; sourceTree = "<group>"; };
+		259CB2922CC0465600C9F285 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		259CB2932CC0465600C9F285 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		259CB2A22CC046F300C9F285 /* UserModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
+		259CB2A52CC047D000C9F285 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		259CB2A62CC047D000C9F285 /* LazyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyList.swift; sourceTree = "<group>"; };
+		259CB2A92CC0486D00C9F285 /* OrbitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitApp.swift; sourceTree = "<group>"; };
 		25A399522CBF30C500D6BCE8 /* Orbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25A399552CBF30C500D6BCE8 /* OrbitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitApp.swift; sourceTree = "<group>"; };
-		25A399572CBF30C500D6BCE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		25A399592CBF30C500D6BCE8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		25A3995B2CBF30C700D6BCE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25A3995E2CBF30C700D6BCE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25A399642CBF30C700D6BCE8 /* OrbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +111,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259CB2782CC0460400C9F285 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				259CB2792CC0460400C9F285 /* LocationManagerDelegate.swift */,
+				259CB27A2CC0460400C9F285 /* AccountManagementService.swift */,
+				259CB27C2CC0460400C9F285 /* UserManagementService.swift */,
+				259CB27D2CC0460400C9F285 /* AppwriteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		259CB2832CC0465600C9F285 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				259CB2842CC0465600C9F285 /* ViewModels */,
+				259CB2872CC0465600C9F285 /* Screens */,
+				259CB28D2CC0465600C9F285 /* Components */,
+				259CB2A92CC0486D00C9F285 /* OrbitApp.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		259CB2842CC0465600C9F285 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				259CB2852CC0465600C9F285 /* UserViewModel.swift */,
+				259CB2862CC0465600C9F285 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		259CB2872CC0465600C9F285 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				259CB2882CC0465600C9F285 /* MainTabView.swift */,
+				259CB2892CC0465600C9F285 /* LoginView.swift */,
+				259CB28A2CC0465600C9F285 /* HomeView.swift */,
+				259CB28B2CC0465600C9F285 /* SignupView.swift */,
+				259CB28C2CC0465600C9F285 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		259CB28D2CC0465600C9F285 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				259CB28E2CC0465600C9F285 /* AppwriteLogo.swift */,
+				259CB28F2CC0465600C9F285 /* SearchBar.swift */,
+				259CB2902CC0465600C9F285 /* InterestsHorizontalTags.swift */,
+				259CB2922CC0465600C9F285 /* ActivityIndicatorView.swift */,
+				259CB2932CC0465600C9F285 /* ErrorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		259CB2A12CC046F300C9F285 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				259CB2A22CC046F300C9F285 /* UserModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		259CB2A42CC047D000C9F285 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				259CB2A52CC047D000C9F285 /* Extensions.swift */,
+				259CB2A62CC047D000C9F285 /* LazyList.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		25A399492CBF30C500D6BCE8 = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +206,10 @@
 		25A399542CBF30C500D6BCE8 /* Orbit */ = {
 			isa = PBXGroup;
 			children = (
-				25A399552CBF30C500D6BCE8 /* OrbitApp.swift */,
-				25A399572CBF30C500D6BCE8 /* ContentView.swift */,
-				25A399592CBF30C500D6BCE8 /* Item.swift */,
+				259CB2A42CC047D000C9F285 /* Utilities */,
+				259CB2A12CC046F300C9F285 /* Models */,
+				259CB2832CC0465600C9F285 /* UI */,
+				259CB2782CC0460400C9F285 /* Services */,
 				25A3995B2CBF30C700D6BCE8 /* Assets.xcassets */,
 				25A3995D2CBF30C700D6BCE8 /* Preview Content */,
 			);
@@ -206,6 +313,7 @@
 				TargetAttributes = {
 					25A399512CBF30C500D6BCE8 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					25A399632CBF30C700D6BCE8 = {
 						CreatedOnToolsVersion = 15.2;
@@ -272,9 +380,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A399582CBF30C500D6BCE8 /* ContentView.swift in Sources */,
-				25A3995A2CBF30C500D6BCE8 /* Item.swift in Sources */,
-				25A399562CBF30C500D6BCE8 /* OrbitApp.swift in Sources */,
+				259CB27F2CC0460400C9F285 /* AccountManagementService.swift in Sources */,
+				259CB2942CC0465600C9F285 /* UserViewModel.swift in Sources */,
+				259CB29B2CC0465600C9F285 /* AppwriteLogo.swift in Sources */,
+				259CB29A2CC0465600C9F285 /* ContentView.swift in Sources */,
+				259CB29D2CC0465600C9F285 /* InterestsHorizontalTags.swift in Sources */,
+				259CB2812CC0460400C9F285 /* UserManagementService.swift in Sources */,
+				259CB2982CC0465600C9F285 /* HomeView.swift in Sources */,
+				259CB2AA2CC0486D00C9F285 /* OrbitApp.swift in Sources */,
+				259CB2A02CC0465600C9F285 /* ErrorView.swift in Sources */,
+				259CB2972CC0465600C9F285 /* LoginView.swift in Sources */,
+				259CB29C2CC0465600C9F285 /* SearchBar.swift in Sources */,
+				259CB2962CC0465600C9F285 /* MainTabView.swift in Sources */,
+				259CB2A82CC047D000C9F285 /* LazyList.swift in Sources */,
+				259CB2952CC0465600C9F285 /* AuthViewModel.swift in Sources */,
+				259CB27E2CC0460400C9F285 /* LocationManagerDelegate.swift in Sources */,
+				259CB2A72CC047D000C9F285 /* Extensions.swift in Sources */,
+				259CB2992CC0465600C9F285 /* SignupView.swift in Sources */,
+				259CB2A32CC046F300C9F285 /* UserModels.swift in Sources */,
+				259CB2822CC0460400C9F285 /* AppwriteService.swift in Sources */,
+				259CB29F2CC0465600C9F285 /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
