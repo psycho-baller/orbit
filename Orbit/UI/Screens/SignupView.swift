@@ -130,7 +130,6 @@ struct SignupView: View {
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
         SignupView()
-            .preferredColorScheme(.dark)
             .environmentObject(AuthViewModel())
             .environmentObject(UserViewModel())
     }

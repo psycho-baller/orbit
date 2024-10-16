@@ -92,7 +92,7 @@ struct ExampleView4: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
-            .environmentObject(UserViewModel())  // Assuming you pass environment objects
+            .environmentObject(UserViewModel())
             .environmentObject(AuthViewModel())
     }
 }

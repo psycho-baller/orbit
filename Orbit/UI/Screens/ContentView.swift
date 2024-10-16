@@ -12,10 +12,8 @@ import SwiftUI
 // MARK: - View
 
 struct ContentView: View {
-//    @ObservedObject private(set) var viewModel: ViewModel
-
-    @StateObject var authVM = AuthViewModel()
-    @StateObject var userVM = UserViewModel()
+    @EnvironmentObject var authVM: AuthViewModel
+    @EnvironmentObject var userVM: UserViewModel
 
     @State var isOneSecondAfterLaunch = false
     //    init(viewModel: ViewModel) {
@@ -53,8 +51,7 @@ struct ContentView: View {
                     //                        .move(edge: .trailing)
                     //                    )
                     MainTabView()
-                        .environmentObject(authVM)
-                        .environmentObject(userVM)
+
                 }
                 if !authVM.isLoggedIn && !authVM.isLoading {
 
@@ -65,10 +62,7 @@ struct ContentView: View {
                                 insertion: isOneSecondAfterLaunch
                                     ? .move(edge: .leading) : .scale,
                                 removal: .move(edge: .leading))
-                        )  // Asymmetric transition
-
-                        .environmentObject(authVM)
-                        .environmentObject(userVM)
+                        )
 
                 }
             }.animation(
@@ -86,15 +80,12 @@ struct ContentView: View {
 }
 
 
-
 // MARK: - Preview
 
 #if DEBUG
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView(
-//                viewModel: ContentView.ViewModel(container: .preview)
-            )
-        }
+    #Preview{
+        ContentView()
+            .environmentObject(AuthViewModel())
+            .environmentObject(UserViewModel())
     }
 #endif
