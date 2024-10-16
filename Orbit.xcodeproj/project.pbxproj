@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259CB2262CC02F0D00C9F285 /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 259CB2252CC02F0D00C9F285 /* Appwrite */; };
+		259CB2292CC02F2500C9F285 /* EnvironmentOverrides in Frameworks */ = {isa = PBXBuildFile; productRef = 259CB2282CC02F2500C9F285 /* EnvironmentOverrides */; };
 		25A399562CBF30C500D6BCE8 /* OrbitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399552CBF30C500D6BCE8 /* OrbitApp.swift */; };
 		25A399582CBF30C500D6BCE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399572CBF30C500D6BCE8 /* ContentView.swift */; };
 		25A3995A2CBF30C500D6BCE8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A399592CBF30C500D6BCE8 /* Item.swift */; };
@@ -53,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259CB2292CC02F2500C9F285 /* EnvironmentOverrides in Frameworks */,
+				259CB2262CC02F0D00C9F285 /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +150,10 @@
 			dependencies = (
 			);
 			name = Orbit;
+			packageProductDependencies = (
+				259CB2252CC02F0D00C9F285 /* Appwrite */,
+				259CB2282CC02F2500C9F285 /* EnvironmentOverrides */,
+			);
 			productName = Orbit;
 			productReference = 25A399522CBF30C500D6BCE8 /* Orbit.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +226,10 @@
 				Base,
 			);
 			mainGroup = 25A399492CBF30C500D6BCE8;
+			packageReferences = (
+				259CB2242CC02F0D00C9F285 /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+				259CB2272CC02F2500C9F285 /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */,
+			);
 			productRefGroup = 25A399532CBF30C500D6BCE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,6 +441,7 @@
 				DEVELOPMENT_TEAM = 3V2UU7RRK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Orbit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cpsc575.orbit.Orbit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpsc575.orbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -458,6 +471,7 @@
 				DEVELOPMENT_TEAM = 3V2UU7RRK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Orbit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cpsc575.orbit.Orbit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpsc575.orbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -592,6 +606,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		259CB2242CC02F0D00C9F285 /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		259CB2272CC02F2500C9F285 /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/EnvironmentOverrides";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		259CB2252CC02F0D00C9F285 /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259CB2242CC02F0D00C9F285 /* XCRemoteSwiftPackageReference "sdk-for-apple" */;
+			productName = Appwrite;
+		};
+		259CB2282CC02F2500C9F285 /* EnvironmentOverrides */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259CB2272CC02F2500C9F285 /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */;
+			productName = EnvironmentOverrides;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25A3994A2CBF30C500D6BCE8 /* Project object */;
 }
