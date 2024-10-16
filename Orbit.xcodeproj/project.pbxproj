@@ -206,10 +206,10 @@
 		25A399542CBF30C500D6BCE8 /* Orbit */ = {
 			isa = PBXGroup;
 			children = (
+				259CB2782CC0460400C9F285 /* Services */,
 				259CB2A42CC047D000C9F285 /* Utilities */,
 				259CB2A12CC046F300C9F285 /* Models */,
 				259CB2832CC0465600C9F285 /* UI */,
-				259CB2782CC0460400C9F285 /* Services */,
 				25A3995B2CBF30C700D6BCE8 /* Assets.xcassets */,
 				25A3995D2CBF30C700D6BCE8 /* Preview Content */,
 			);
