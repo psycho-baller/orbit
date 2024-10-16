@@ -10,13 +10,14 @@ import SwiftUI
 @main
 struct OrbitApp: App {
     
-    
     @StateObject var authVM = AuthViewModel()
     @StateObject var userVM = UserViewModel()
+
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .attachEnvironmentOverrides()
                 .environmentObject(authVM)
                 .environmentObject(userVM)
         }
